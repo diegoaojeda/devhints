@@ -1,7 +1,8 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 #
 # Ref: http://koenighotze.de/hack/devhints.html
+# All credits go to them.
 #
 
 type wget >/dev/null 2>&1 || { echo >&2 "I require wget but it's not installed."; exit 1; }
