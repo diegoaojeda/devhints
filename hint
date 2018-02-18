@@ -11,9 +11,9 @@ type mdless >/dev/null 2>&1 || { echo >&2 "I require mdless but it's not install
 TOOL=${1:?Usage: hack.sh <toolname> [--refresh]}
 REFRESH=${2:-no}
 
-RAW_MD_URL="https://raw.github.com/diegoaojeda/devhints/master/cheatsheets/${TOOL}.md"
+RAW_MD_URL="https://raw.githubusercontent.com/diegoaojeda/devhints/master/cheatsheets/${TOOL}.md"
 
-CACHE_DIR=$HOME/.devhints/
+CACHE_DIR=$HOME/.devhints
 LOCAL_CACHE_FILE=$CACHE_DIR/${TOOL}.md
 
 if [ ! -d CACHE_DIR ]; then
